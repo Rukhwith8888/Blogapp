@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import posts from "../data/posts";
+import { useSelector } from "react-redux";
 
 export default function BlogList() {
+  const posts = useSelector(state => state.posts);
   return (
     <div className="p">
       <h2>My Blog List</h2>
